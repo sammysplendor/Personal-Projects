@@ -1,0 +1,81 @@
+/* LARGE - SMALL LAPTOPS: 1024px - 1260px */
+
+@media (max-width: 72rem) {
+  /* 1150px / 16px = 72rem */
+  /* 72rem x 16px = 1152px */
+
+  html {
+    font-size: 56.25%;
+    /* 9px / 16px = 56.25% */
+  }
+}
+
+/* X-SMALL - PHONE PORTRAIT: < 576px */
+
+@media (max-width: 34rem) {
+  /* 530px / 16px = 34rem */
+  /* 34rem x 16px = 544px */
+
+  html {
+    font-size: 50%;
+    /* 8px / 16px = 50% */
+  }
+
+  main {
+    margin: 25px;
+  }
+
+  .headline-break {
+    display: none;
+  }
+
+  .navlinks-and-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    background: #f2f8fc;
+    z-index: 99;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .navbar-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 99;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  header {
+    margin-bottom: 50px;
+  }
+}
